@@ -2,6 +2,7 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.LinkedList;
 
 public class test {
@@ -13,7 +14,7 @@ public class test {
 //		System.out.println(cnt);
 		
 //		QuickSort qs = new QuickSort();
-//		int pos = qs.sort(A, 0, A.length-1, 20);
+//		int pos = qs.sort(A, 0, A.length-1, 2);
 //		System.out.println(pos);
 		
 //		LongestPalindromic lp = new LongestPalindromic();
@@ -53,17 +54,48 @@ public class test {
 //		int[][] input = new int[][] {{0,1}, {0,2},{1,0}};
 //		System.out.println(cs.canFinishII(6, input));
 		
-		Dijkstra sp = new Dijkstra();
-		int graph[][] = new int[][]{{0, 4, 0, 0, 0, 0, 0, 8, 0}, 
-            {4, 0, 8, 0, 0, 0, 0, 11, 0}, 
-            {0, 8, 0, 7, 0, 4, 0, 0, 2}, 
-            {0, 0, 7, 0, 9, 14, 0, 0, 0}, 
-            {0, 0, 0, 9, 0, 10, 0, 0, 0}, 
-            {0, 0, 4, 14, 10, 0, 2, 0, 0}, 
-            {0, 0, 0, 0, 0, 2, 0, 1, 6}, 
-            {8, 11, 0, 0, 0, 0, 1, 0, 7}, 
-            {0, 0, 2, 0, 0, 0, 6, 7, 0} 
-           }; 
-           sp.shortestPath(graph, 0);
+//		Dijkstra sp = new Dijkstra();
+//		int graph[][] = new int[][]{{0, 4, 0, 0, 0, 0, 0, 8, 0}, 
+//            {4, 0, 8, 0, 0, 0, 0, 11, 0}, 
+//            {0, 8, 0, 7, 0, 4, 0, 0, 2}, 
+//            {0, 0, 7, 0, 9, 14, 0, 0, 0}, 
+//            {0, 0, 0, 9, 0, 10, 0, 0, 0}, 
+//            {0, 0, 4, 14, 10, 0, 2, 0, 0}, 
+//            {0, 0, 0, 0, 0, 2, 0, 1, 6}, 
+//            {8, 11, 0, 0, 0, 0, 1, 0, 7}, 
+//            {0, 0, 2, 0, 0, 0, 6, 7, 0} 
+//           }; 
+//           sp.shortestPath(graph, 0);
+		
+//		int[] A = new int[]{1,2,3,4,5,6};
+//		LongestIncreasingSubsequence lis = new LongestIncreasingSubsequence();
+//		System.out.println(lis.lengthOfLIS(A));
+		
+//		EditDistance ed = new EditDistance();
+//		System.out.println(ed.minDistanceOpt("horse", "ros"));
+	
+//		PalindromePartitioningII ppii = new PalindromePartitioningII();
+//		String str = "aaab";
+//		System.out.println(ppii.minCut(str));
+		
+//		MinimumWindowSubstring mws = new MinimumWindowSubstring();
+//		String s = "ADOBECODEBANC";
+//		String t = "ABC";
+//		System.out.println(mws.minWindow(s, t));
+		
+//		SlidingWindowMaximum swm = new SlidingWindowMaximum();
+//		int[] nums = new int[]{1,3,-1,-3,5,3,6,7};
+//		System.out.println(Arrays.toString(swm.maxSlidingWindow(nums, 3)));
+		
+//		MinimumASCIIDeleteSum mads = new MinimumASCIIDeleteSum();
+//		mads.minimumDeleteSum("delete", "leet");
+		
+//		LargestRectangleInHistogram lrih = new LargestRectangleInHistogram();
+//		int[] heights = new int[]{2,1,5,6,2,3};
+//		System.out.println(lrih.largestRectangleArea2(heights));
+		
+		RussianDoll rd = new RussianDoll();
+		int[][] input = new int[][] {{5,4},{6,4},{6,7},{2,3}};
+		System.out.println(rd.maxEnvelopes(input));
 	}
 }
